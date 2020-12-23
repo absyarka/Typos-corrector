@@ -173,7 +173,6 @@ def get_ans2(s, k, c1):
     anss = ""
     heappush(q, (-1, 0, 0, '', 0, 0))
     # print(q)
-    # print("ти лох")
     while len(q):
         e = heappop(q)
         print(e)
@@ -255,7 +254,6 @@ def fix_text(t):
             ans1 += s
             ans2 += s
     except:
-        print('лох')
         ans1 += s
         ans2 += s
     print(ans1, ans2)
