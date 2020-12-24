@@ -74,9 +74,9 @@ def add_bor2(s, ind_s, num, k):
         h2[num].verh[s[ind_s]] = ind2 + 1
         h2.append(Bukva())
         ind2 += 1
-        add_bor(s, ind_s + 1, ind2, k)
+        add_bor2(s, ind_s + 1, ind2, k)
     else:
-        add_bor(s, ind_s + 1, h2[num].verh[s[ind_s]], k)
+        add_bor2(s, ind_s + 1, h2[num].verh[s[ind_s]], k)
 
 
 root = 0
