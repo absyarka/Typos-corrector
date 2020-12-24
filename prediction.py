@@ -57,6 +57,7 @@ def build_model(vocab_size, embedding_dim, rnn_units, batch_size=64):
 
 def generate_text(model, start_string, word2idx, idx2word):
     num_generate = 10
+    f=start_string
     start_string=start_string.lower()
     start_string=start_string.split()[-1]
     
@@ -79,4 +80,4 @@ def generate_text(model, start_string, word2idx, idx2word):
         input_eval = tf.expand_dims([predicted_id], 0)
         text_generated.append(idx2word[predicted_id])
     print(len(text_generated))
-    return (start_string +' ' + ' '.join(text_generated))
+    return (f +' ' + ' '.join(text_generated))
