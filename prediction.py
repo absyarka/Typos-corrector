@@ -57,6 +57,9 @@ def build_model(vocab_size, embedding_dim, rnn_units, batch_size=64):
 
 def generate_text(model, start_string, word2idx, idx2word):
     num_generate = 10
+    start_string=start_string.lower()
+    start_string=start_string.split()[-1]
+    
     if start_string not in word2idx:
         print("no such word")
         return start_string
