@@ -179,7 +179,6 @@ def get_ans2(s, k, c1):
         if e[2] == len(s):
             if h2[e[1]].term:   
                 if e[0] * h2[e[1]].k < ans:
-                    print(e[0] * h2[e[1]].k)
                     ans = e[0] * h2[e[1]].k
                     anss = e[3]
         if e[0] < ans and (e[1], e[2]) not in used:
