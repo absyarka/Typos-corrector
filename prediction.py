@@ -63,7 +63,7 @@ def generate_text(model, start_string, word2idx, idx2word):
     
     if start_string not in word2idx:
         print("no such word")
-        return start_string
+        return f
     input_eval = [word2idx[s] for s in start_string.split()]
     input_eval = tf.expand_dims(input_eval, 0)
 
