@@ -92,6 +92,7 @@ def count_probability(s1):
 
 
 def solve_with_symspell(start_string):
+    start_string=start_string.lower()
     lst_text = start_string.split()
     finish_string = ''
     for word in lst_text:
